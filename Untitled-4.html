@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costumbres de Yucatán</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #00695c;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #004d40;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav button {
+            background-color: #00796b;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        nav button:hover {
+            background-color: #005f56;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h1, h2 {
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Integrantes</h1>
+    <p>Explora las tradiciones que dan vida a esta maravillosa región.</p>
+</header>
+
+<nav>
+    <button onclick="scrollToSection('bienvenida')">Integrantes</button>
+    <button onclick="scrollToSection('introduccion')">Gastronomia</button>
+    <button onclick="scrollToSection('costumbres')">Costumbres</button>
+    <button onclick="scrollToSection('Inicio')">Inicio</button>
+</nav>
+
+<section id="bienvenida" class="container">
+    <h2>INTEGRANTES</h2>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</section>
+<section id="costumbres" class="container"></section>
+
+<footer>
+    <p>&copy; 2024 Costumbres de Yucatán. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
